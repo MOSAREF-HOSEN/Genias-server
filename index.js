@@ -29,7 +29,7 @@
              app.get('/product/:id', async(req, res) =>{
                  const id = req.params.id
                  const query = {_id: ObjectId(id)}
-                 console.log(query);
+                //  console.log(query);
                  const product = await productCollection.findOne(query)
                 
                  res.send(product)
